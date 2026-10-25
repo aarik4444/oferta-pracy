@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta Pracy - Frontend Developer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 30px 40px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        header .company {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .job-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            background-color: #eef5fc;
+            padding: 15px 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .badge {
+            background: #ffffff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0066cc;
+            border: 1px solid #b3d1ff;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 20px;
+            color: #0066cc;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #eef5fc;
+            padding-bottom: 5px;
+        }
+
+        .section ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.2s ease;
+        }
+
+        .apply-btn:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+            border-top: 1px solid #eee;
+        }
+
+        @media (max-width: 600px) {
+            header, .job-details, .content {
+                padding: 20px;
+            }
+
+            .apply-btn {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Junior / Mid Frontend Developer</h1>
+            <div class="company">TechCorp Solutions Sp. z o.o.</div>
+        </header>
+
+        <div class="job-details">
+            <span class="badge">📍 Warszawa (Zdalnie)</span>
+            <span class="badge">💰 8 000 - 12 000 PLN (B2B / UoP)</span>
+            <span class="badge">⏰ Pełny etat</span>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>O firmie</h2>
+                <p>Jesteśmy dynamicznie rozwijającą się firmą technologiczną, która tworzy nowoczesne aplikacje internetowe dla klientów z całego świata. Szukamy osoby, która dołączy do naszego zespołu programistów i pomoże nam tworzyć przejrzyste i responsywne interfejsy.</p>
+            </div>
+
+            <div class="section">
+                <h2>Zakres obowiązków</h2>
+                <ul>
+                    <li>Tworzenie i rozwój stron oraz aplikacji internetowych w HTML, CSS i JavaScript.</li>
+                    <li>Dbanie o responsywność (RWD) i optymalizację wydajności stron.</li>
+                    <li>Współpraca z projektantami UX/UI przy wdrażaniu makiet graficznych.</li>
+                    <li>Naprawianie błędów i ciągłe ulepszanie istniejących projektów.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Wymagania</h2>
+                <ul>
+                    <li>Dobra znajomość HTML5 i CSS3 (w tym Flexbox/Grid).</li>
+                    <li>Podstawowa znajomość JavaScript (ES6+).</li>
+                    <li>Znajomość zasad RWD (Responsive Web Design).</li>
+                    <li>Umiejętność korzystania z systemu kontroli wersji Git.</li>
+                    <li>Chęć do nauki i stałego podnoszenia kwalifikacji.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Oferujemy</h2>
+                <ul>
+                    <li>Elastyczne godziny pracy i możliwość pracy 100% zdalnej.</li>
+                    <li>Budżet szkoleniowy oraz wsparcie doświadczonych mentorek i mentorów.</li>
+                    <li>Prywatną opiekę medyczną i kartę Multisport.</li>
+                    <li>Świetną atmosferę w zespole bez korporacyjnych sztywnych zasad.</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="mailto:rekrutacja@example.com?subject=Aplikacja na stanowisko Frontend Developer" class="apply-btn">Aplikuj teraz</a>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 TechCorp Solutions. Wszelkie prawa zastrzeżone.
+        </footer>
+    </div>
+
+</body>
+</html>
