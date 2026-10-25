@@ -88,16 +88,38 @@
             margin-bottom: 8px;
         }
 
+        /* Поля формы */
+        .apply-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .apply-form input,
+        .apply-form textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+        }
+
+        .apply-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
         .apply-btn {
-            display: inline-block;
             background-color: #28a745;
             color: white;
-            text-decoration: none;
+            border: none;
             padding: 14px 28px;
             font-size: 16px;
             font-weight: bold;
             border-radius: 5px;
-            text-align: center;
+            cursor: pointer;
             transition: background-color 0.2s ease;
         }
 
@@ -116,11 +138,6 @@
         @media (max-width: 600px) {
             header, .job-details, .content {
                 padding: 20px;
-            }
-
-            .apply-btn {
-                display: block;
-                width: 100%;
             }
         }
     </style>
@@ -142,42 +159,29 @@
         <div class="content">
             <div class="section">
                 <h2>O firmie</h2>
-                <p>Jesteśmy dynamicznie rozwijającą się firmą technologiczną, która tworzy nowoczesne aplikacje internetowe dla klientów z całego świata. Szukamy osoby, która dołączy do naszego zespołu programistów i pomoże nam tworzyć przejrzyste i responsywne interfejsy.</p>
-            </div>
-
-            <div class="section">
-                <h2>Zakres obowiązków</h2>
-                <ul>
-                    <li>Tworzenie i rozwój stron oraz aplikacji internetowych w HTML, CSS i JavaScript.</li>
-                    <li>Dbanie o responsywność (RWD) i optymalizację wydajności stron.</li>
-                    <li>Współpraca z projektantami UX/UI przy wdrażaniu makiet graficznych.</li>
-                    <li>Naprawianie błędów i ciągłe ulepszanie istniejących projektów.</li>
-                </ul>
+                <p>Jesteśmy dynamicznie rozwijającą się firmą technologiczną, которая tworzy nowoczesne aplikacje internetowe dla klientów z całego świata.</p>
             </div>
 
             <div class="section">
                 <h2>Wymagania</h2>
                 <ul>
-                    <li>Dobra znajomość HTML5 i CSS3 (w tym Flexbox/Grid).</li>
+                    <li>Dobra znajomość HTML5 i CSS3.</li>
                     <li>Podstawowa znajomość JavaScript (ES6+).</li>
-                    <li>Znajomość zasad RWD (Responsive Web Design).</li>
-                    <li>Umiejętność korzystania z systemu kontroli wersji Git.</li>
-                    <li>Chęć do nauki i stałego podnoszenia kwalifikacji.</li>
+                    <li>Znajomość zasad RWD.</li>
                 </ul>
             </div>
 
             <div class="section">
-                <h2>Oferujemy</h2>
-                <ul>
-                    <li>Elastyczne godziny pracy i możliwość pracy 100% zdalnej.</li>
-                    <li>Budżet szkoleniowy oraz wsparcie doświadczonych mentorek i mentorów.</li>
-                    <li>Prywatną opiekę medyczną i kartę Multisport.</li>
-                    <li>Świetną atmosferę w zespole bez korporacyjnych sztywnych zasad.</li>
-                </ul>
-            </div>
+                <h2>Aplikuj na to stanowisko</h2>
+                
+                <!-- ФОРМА ОТПРАВКИ -->
+                <form action="https://formspree.io/f/your-email@example.com" method="POST" class="apply-form">
+                    <input type="text" name="name" placeholder="Twoje imię i nazwisko" required>
+                    <input type="email" name="email" placeholder="Twój e-mail" required>
+                    <textarea name="message" placeholder="Napisz kilka słów o sobie / link do CV" required></textarea>
+                    <button type="submit" class="apply-btn">Aplikuj teraz</button>
+                </form>
 
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="mailto:rekrutacja@example.com?subject=Aplikacja na stanowisko Frontend Developer" class="apply-btn">Aplikuj teraz</a>
             </div>
         </div>
 
