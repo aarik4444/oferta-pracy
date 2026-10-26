@@ -15,7 +15,7 @@ export default async function handler(req, res) {
             },
             body: JSON.stringify({
                 sender: { name: "Portal Pracy", email: "aarik4444@gmail.com" }, 
-                to: [{ email: "aarik4444@gmail.com", name: "Nauczyciel" }],   // <--- СЮДА придет письмо
+                to: [{ email: "informatykcmg@gmail.com", name: "Nauczyciel" }],   // <--- СЮДА придет письмо
                 subject: `Nowa aplikacja na stanowisko od: ${name}`,
                 htmlContent: `
                     <h3>Nowe zgłoszenie o pracę!</h3>
