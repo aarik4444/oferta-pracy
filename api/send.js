@@ -14,7 +14,7 @@ export default async function handler(req, res) {
                 'content-type': 'application/json'
             },
             body: JSON.stringify({
-                sender: { name: "Portal Pracy", email: "your-brevo-login@example.com" }, 
+                sender: { name: "Portal Pracy", email: "aarik4444@gmail.com" }, 
                 to: [{ email: "email_учителя@school.pl", name: "Nauczyciel" }],   // <--- СЮДА придет письмо
                 subject: `Nowa aplikacja na stanowisko od: ${name}`,
                 htmlContent: `
