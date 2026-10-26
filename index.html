@@ -189,6 +189,36 @@
             © 2026 TechCorp Solutions. Wszelkie prawa zastrzeżone.
         </footer>
     </div>
+    <script>
+    const form = document.querySelector('.apply-form');
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = {
+            name: form.querySelector('[name="name"]').value,
+            email: form.querySelector('[name="email"]').value,
+            message: form.querySelector('[name="message"]').value
+        };
+        
+        try {
+            const response = await fetch('/api/send', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            
+            if (response.ok) {
+                alert('Dziękujemy! Twoje zgłoszenie zostało wysłane do pracodawcy.');
+                form.reset();
+            } else {
+                alert('Wystąpił błąd podczas wysyłania.');
+            }
+        } catch (error) {
+            alert('Błąd połączenia z serwerem.');
+        }
+    });
+</script>
 
 </body>
 </html>
